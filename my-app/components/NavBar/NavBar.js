@@ -13,6 +13,9 @@ const NavBar = () => {
       <ul>
         <NavBarLink href="/share">Share Your Meal</NavBarLink>
       </ul>
+      <ul>
+        <NavBarLink href="/api/auth/signout">Sign out</NavBarLink>
+      </ul>
     </nav>
   );
 };
