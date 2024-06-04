@@ -1,31 +1,33 @@
-/* Mobile */
-
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin: 2rem auto;
   width: 90%;
+  padding: 2rem 0;
 }
 
 .slideshow {
-  width: 100%;
-  height: auto;
+  display: none;
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #6c584c;
   font-size: 1.5rem;
   text-align: center;
+  padding: 1rem 0;
+  width: 100%;
 }
 
 .hero h1 {
-  font-size: 2rem;
+  margin: 0 auto;
+  font-size: 3rem;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   background: linear-gradient(90deg, #f9572a, #ffc905);
   background-clip: text;
   -webkit-background-clip: text;
@@ -33,11 +35,15 @@
 }
 
 .cta {
-  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
   gap: 1rem;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
 }
 
 .cta a {
@@ -66,19 +72,6 @@
   background: linear-gradient(90deg, #f9572a, #ff9b05);
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
-  color: #6c584c;
-  font-size: 1.5rem;
-  max-width: 80rem;
-  width: 90%;
-  margin: 2rem auto;
-  text-align: center;
-}
-
-/* Tablet and desktop */
-
 @media (min-width: 768px) {
   .header {
     flex-direction: row;
@@ -86,11 +79,17 @@
     gap: 3rem;
     margin: 3rem auto;
     max-width: 75rem;
+    padding: 0;
   }
 
   .slideshow {
+    display: block; 
     width: 100rem;
     height: 25rem;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
   }
 
   .cta {

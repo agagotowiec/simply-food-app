@@ -58,7 +58,7 @@ const ShareYourRecipe = () => {
           </div>
           <ImagePicker label="Your image" name="image" />
           {state && <p>{state.text}</p>}
-          <button disabled={pending} className={ShareRecipeCss.actions}>
+          <button disabled={pending} className={ShareRecipeCss.submitButton}>
             {pending && "Submitting your recipe"}
             {!pending && "Share Your Recipe"}
           </button>

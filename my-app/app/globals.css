@@ -1,31 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lilita+One&family=Marcellus&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&family=Quicksand:wght@300..700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: "Marcellus", serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 body {
-  margin: 0;
+  margin: 0px;
+  padding: 10px 20px;
   background: radial-gradient(#ccd5ae, #f0ead2);
-}
-
-.header-background {
-  position: absolute;
-  width: 100%;
-  height: 320px;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-svg {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .not-found,
@@ -45,7 +31,6 @@ svg {
   -webkit-text-fill-color: transparent;
   background-size: cover;
   background-position: center;
-  font-family: "Montserrat", sans-serif;
 }
 
 .not-found p,

@@ -8,9 +8,7 @@
   text-align: center;
 }
 
-.header h1 {
-  font-family: "Montserrat", sans-serif;
-}
+
 
 .highlight {
   background: linear-gradient(90deg, #f9572a, #ff8a05);
@@ -35,7 +33,6 @@
   display: block;
   margin: 0.5rem 0.5rem;
   font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
   color: #386641;
   font-weight: bold;
 }
@@ -49,7 +46,6 @@
   border: 1px solid #454952;
   background: #d6f9c5;
   font-size: 1.25rem;
-  font-family: "Montserrat", sans-serif;
   color: #040404;
 }
 
@@ -68,16 +64,15 @@
   width: 100%;
 }
 
-.actions {
+.submitButton {
+  margin: 0 auto;
+  display: block;
   text-align: right;
-}
-
-.actions button {
   border: 0;
   padding: 0.75rem 2rem;
   background: linear-gradient(90deg, #f9572a, #ff9b05);
   border: none;
-  color: #064602;
+  color: #fbfdfb;
   border-radius: 2px;
   cursor: pointer;
   font: inherit;
@@ -85,14 +80,15 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.actions button:hover,
-.actions button:focus {
-  background: linear-gradient(90deg, #fd4715, #f9b241);
+.submitButton:hover,
+.submitButton:focus {
+  background: linear-gradient(90deg, #f9b241, #fd4715);
+  color: #000000;
 }
 
-.actions button:disabled,
-.actions button:hover:disabled,
-.actions button:focus:disabled {
+.submitButton:disabled,
+.submitButton:hover:disabled,
+.submitButton:focus:disabled {
   background: #0c0b0b;
   color: #000000;
   cursor: not-allowed;
