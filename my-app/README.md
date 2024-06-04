@@ -12,7 +12,7 @@ Next, run development server:
 npm run dev
 ```
 
-Then, log in to see content:
+Then paste below credentials to see the content:
 
 ```bash
 username: testUser
@@ -20,3 +20,5 @@ password: testPass22
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
+
+## Upload of images into Image Picker is only available in development.
