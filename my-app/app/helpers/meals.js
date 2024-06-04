@@ -15,6 +15,7 @@ export const getIndividualMeal = (slug) => {
 };
 
 export const saveSubmittedMeal = async (meal) => {
+  //sanitise HTML for dangerouslySetInnerHTML
   meal.ingredients = xss(meal.ingredients);
   meal.instructions = xss(meal.instructions);
   meal.slug = slugify(meal.title, { lower: true });

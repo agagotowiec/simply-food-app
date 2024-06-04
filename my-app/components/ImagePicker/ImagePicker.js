@@ -23,24 +23,24 @@ const ImagePicker = ({ label, name }) => {
   };
 
   return (
-    <div className={ImagePickerCss.picker}>
-      <label htmlFor={name}>{label}</label>
-      <div className={ImagePickerCss.controls}>
-        <div className={ImagePickerCss.preview}>
-          {!image && <p>No image selected</p>}
-          {image && <Image alt="Selected image" src={image} fill />}
+      <div className={ImagePickerCss.picker}>
+        <label htmlFor={name}>{label}</label>
+        <div className={ImagePickerCss.controls}>
+          <div className={ImagePickerCss.preview}>
+            {!image && <p>No image selected</p>}
+            {image && <Image alt="Selected image" src={image} fill />}
+          </div>
+          <input
+            required
+            className={ImagePickerCss.input}
+            name={name}
+            id={name}
+            type="file"
+            accept="image/png, image/jpeg"
+            onChange={handleSelectedImage}
+          />
         </div>
-        <input
-          required
-          className={ImagePickerCss.input}
-          name={name}
-          id={name}
-          type="file"
-          accept="image/png, image/jpeg"
-          onChange={handleSelectedImage}
-        />
       </div>
-    </div>
   );
 };
 

@@ -5,6 +5,7 @@
   max-width: 75rem;
   color: #386641;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .header h1 {
@@ -27,6 +28,7 @@
 
 .form {
   max-width: 50rem;
+  margin: 0 auto;
 }
 
 .form label {
