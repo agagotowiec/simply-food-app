@@ -21,4 +21,4 @@ password: testPass22
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## Upload of images into Image Picker is only available in development.
+**Upload of images into Image Picker is only available in dev**.
