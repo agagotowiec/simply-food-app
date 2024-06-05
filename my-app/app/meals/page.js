@@ -26,7 +26,7 @@ const Meals = async () => {
         <p>
           {texts.cookingText}
           <span className={MealsCss.cta}>
-            <Link href="meals/share">{texts.shareText}</Link>
+            <Link href="meals/share" suppressHydrationWarning>{texts.shareText}</Link>
           </span>
         </p>
       </header>

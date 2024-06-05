@@ -19,9 +19,13 @@ const ShareYourRecipe = () => {
         <p>and let others enjoy it too!</p>
       </header>
       <main className={ShareRecipeCss.main}>
-        <form className={ShareRecipeCss.form} action={formAction}>
+        <form
+          className={ShareRecipeCss.form}
+          action={formAction}
+          suppressHydrationWarning
+        >
           <div className={ShareRecipeCss.row}>
-            <div>
+            <div suppressHydrationWarning>
               <label htmlFor="name">Your name</label>
               <input type="text" id="name" name="name" required />
             </div>
@@ -56,7 +60,7 @@ const ShareYourRecipe = () => {
               required
             ></textarea>
           </div>
-          <ImagePicker label="Your image" name="image" />
+          <ImagePicker label="Your image" name="image" suppressHydrationWarning/>
           {state && <p>{state.text}</p>}
           <button disabled={pending} className={ShareRecipeCss.submitButton}>
             {pending && "Submitting your recipe"}
